@@ -1,0 +1,10 @@
+
+
+// Run Snowplow micro in Docker
+
+  docker run \
+  --mount type=bind,source=$(pwd)/,destination=/config \
+  -p 9090:9090 \
+  snowplow/snowplow-micro:1.2.1 \
+  --collector-config /config/micro.conf \
+  --iglu /config/iglu.json
