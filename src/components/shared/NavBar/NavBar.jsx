@@ -1,7 +1,7 @@
 import { useState, useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AppNavBar, setItemActive } from 'baseui/app-nav-bar';
-import { Delete, ChevronRight } from 'baseui/icon';
+import { ChevronRight } from 'baseui/icon';
 import { Fade } from 'react-awesome-reveal';
 import logo from '../../../assets/img/llamazon_logo.png';
 import { BasketContext } from '../../../context/BasketContext';
@@ -10,7 +10,7 @@ import { Label2 } from 'baseui/typography';
 
 function NavBar() {
 	const navigate = useNavigate();
-	const [basket, setBasket] = useContext(BasketContext);
+	const [basket] = useContext(BasketContext);
 	const [basketTotal, setBasketTotal] = useState(0);
 
 	useEffect(() => {
@@ -48,6 +48,7 @@ function NavBar() {
 						height='40'
 						style={{ marginTop: '10px', cursor: 'pointer' }}
 						onClick={() => navigate('/')}
+						alt='llamazon logo'
 					/>
 				}
 				mainItems={mainItems}

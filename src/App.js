@@ -8,7 +8,6 @@ import NavBar from './components/shared/NavBar/NavBar';
 import Basket from './pages/Basket';
 import { BasketProvider } from './context/BasketContext';
 import ThankYou from './pages/ThankYou.jsx';
-import { analytics } from './utils/snowplow/config';
 
 function App() {
 	const engine = new Styletron();
