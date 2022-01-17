@@ -5,7 +5,7 @@ import { BasketContext } from '../../../context/BasketContext';
 import { analytics } from '../../../utils/snowplow/config';
 
 function Products({ products }) {
-	const [setBasket] = useContext(BasketContext);
+	const [basket, setBasket] = useContext(BasketContext);
 
 	const addToCart = (product) => {
 		analytics.track('eCommerce', {
