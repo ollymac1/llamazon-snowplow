@@ -2,7 +2,7 @@
 
 Llamazon is basic eCommerce platform for all the llama lovers!
 
-Build for testing the Snowplow tracker only.
+Built for testing the Snowplow tracker only.
 
 # Functionality
 
